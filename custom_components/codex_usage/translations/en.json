@@ -1,0 +1,31 @@
+{
+  "title": "Codex usage",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect Codex usage",
+        "description": "Read your Codex allowance and reset time every five minutes. Enable device code sign-in in [ChatGPT Security Settings](https://chatgpt.com/#settings/Security), then continue to obtain a sign-in code."
+      },
+      "login": {
+        "title": "Sign in to ChatGPT",
+        "description": "Open [ChatGPT device sign-in](https://auth.openai.com/codex/device) and enter **{code}**. Once sign-in is complete, select Submit here. The code expires after 15 minutes. Home Assistant uses its own login; the desktop app is not needed."
+      },
+      "reauth_confirm": {
+        "title": "Reconnect Codex usage",
+        "description": "ChatGPT rejected this session. Continue to sign in again."
+      }
+    },
+    "error": {
+      "cannot_connect": "Cannot reach Codex. Try again shortly.",
+      "authorization_pending": "Complete ChatGPT sign-in, then select Submit."
+    },
+    "abort": {
+      "single_instance_allowed": "Codex usage is already configured.",
+      "already_configured": "This account is already configured.",
+      "authentication_failed": "ChatGPT could not authorize this login. Start setup again.",
+      "invalid_response": "Codex returned an unexpected response.",
+      "reauth_successful": "ChatGPT sign-in was renewed.",
+      "wrong_account": "Sign in with the original ChatGPT account."
+    }
+  }
+}
